@@ -28,20 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.bt_trainees = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // bt_trainees
+            // 
+            this.bt_trainees.Location = new System.Drawing.Point(12, 63);
+            this.bt_trainees.Name = "bt_trainees";
+            this.bt_trainees.Size = new System.Drawing.Size(132, 76);
+            this.bt_trainees.TabIndex = 0;
+            this.bt_trainees.Text = "TraineeManager";
+            this.bt_trainees.UseVisualStyleBackColor = true;
+            this.bt_trainees.Click += new System.EventHandler(this.bt_trainees_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 145);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 76);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Project Manager";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 419);
-            this.Name = "Form1";
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt_trainees);
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button bt_trainees;
+        private System.Windows.Forms.Button button1;
     }
 }
 

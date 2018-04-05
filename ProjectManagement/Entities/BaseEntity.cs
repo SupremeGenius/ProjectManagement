@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjectManagement.Entities
 {
-    public class Project
+    public class BaseEntity
     {
+        public int Id { set; get; }
+        public DateTime CreateDate { set; get; }
+        public DateTime UpdateDate { set; get; }
+
     }
 }

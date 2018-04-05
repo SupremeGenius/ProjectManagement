@@ -16,5 +16,12 @@ namespace ProjectManagement
         {
             InitializeComponent();
         }
+
+        private void bt_trainees_Click(object sender, EventArgs e)
+        {
+            ProjectManagement.Presentation.Trainees.TraineeManager traineeManager
+                = new Presentation.Trainees.TraineeManager();
+            traineeManager.Show(this);
+        }
     }
 }

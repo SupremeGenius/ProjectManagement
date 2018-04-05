@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAL\TraineeBAO.cs" />
     <Compile Include="DAL\Manager.cs" />
+    <Compile Include="DAL\ProjectManagerDataObject.cs" />
     <Compile Include="DAL\TraineeDAO.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Group.cs" />
     <Compile Include="Entities\Project.cs" />
     <Compile Include="Entities\Task.cs" />
     <Compile Include="Entities\Trainee.cs" />
@@ -56,10 +60,37 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Trainees\TraineeDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Trainees\TraineeDataGrid.Designer.cs">
+      <DependentUpon>TraineeDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Trainees\TraineeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Trainees\TraineeForm.Designer.cs">
+      <DependentUpon>TraineeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Trainees\TraineeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Trainees\TraineeManager.Designer.cs">
+      <DependentUpon>TraineeManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Trainees\TraineeDataGrid.resx">
+      <DependentUpon>TraineeDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Trainees\TraineeForm.resx">
+      <DependentUpon>TraineeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Trainees\TraineeManager.resx">
+      <DependentUpon>TraineeManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,6 +101,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\ProjectManagement.Entities.BaseEntity.datasource" />
+    <None Include="Properties\DataSources\ProjectManagement.Entities.Group.datasource" />
+    <None Include="Properties\DataSources\ProjectManagement.Entities.Project.datasource" />
+    <None Include="Properties\DataSources\ProjectManagement.Entities.Task.datasource" />
+    <None Include="Properties\DataSources\ProjectManagement.Entities.Trainee.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,9 +120,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BAL\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Presentation\" />
+    <Folder Include="Presentation\Projects\" />
+    <Folder Include="Presentation\Task\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

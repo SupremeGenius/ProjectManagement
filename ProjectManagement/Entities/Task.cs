@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectManagement.Entities
 {
-    class Task
+    public class TaskProject
     {
     }
 }
