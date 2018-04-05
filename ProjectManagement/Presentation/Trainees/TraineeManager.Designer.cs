@@ -76,6 +76,7 @@
             this.bt_new.TabIndex = 5;
             this.bt_new.Text = "New";
             this.bt_new.UseVisualStyleBackColor = true;
+            this.bt_new.Click += new System.EventHandler(this.bt_new_Click);
             // 
             // TraineeManager
             // 

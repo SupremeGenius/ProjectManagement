@@ -21,5 +21,10 @@ namespace ProjectManagement.Presentation.Trainees
         {
 
         }
+
+        private void bt_new_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,5 +31,40 @@ namespace ProjectManagement.Presentation.Trainees
         {
 
         }
+
+        private void phoneNumberLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void codeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void codeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateDateLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createDateLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createDateDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateDateDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
