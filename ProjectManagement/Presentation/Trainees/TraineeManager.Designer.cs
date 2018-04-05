@@ -41,6 +41,7 @@
             this.traineeForm1.Name = "traineeForm1";
             this.traineeForm1.Size = new System.Drawing.Size(315, 389);
             this.traineeForm1.TabIndex = 0;
+            this.traineeForm1.Load += new System.EventHandler(this.traineeForm1_Load);
             // 
             // traineeDataGrid1
             // 

@@ -16,5 +16,20 @@ namespace ProjectManagement.Presentation.Trainees
         {
             InitializeComponent();
         }
+
+        private void TraineeForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
