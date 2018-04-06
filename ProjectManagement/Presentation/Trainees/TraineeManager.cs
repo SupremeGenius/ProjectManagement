@@ -16,5 +16,15 @@ namespace ProjectManagement.Presentation.Trainees
         {
             InitializeComponent();
         }
+
+        private void traineeForm1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_new_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
