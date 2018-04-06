@@ -9,14 +9,12 @@ namespace ProjectManagement.DAL
 {
     public class TraineeDAO : Manager<Trainee>
     {
-        public override void Modifier(Trainee o)
-        {
-            throw new NotImplementedException();
-        }
 
         public override Trainee RechercherParId(int id)
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }

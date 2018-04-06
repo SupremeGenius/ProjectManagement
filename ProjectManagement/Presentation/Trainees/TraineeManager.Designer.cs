@@ -28,40 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.traineeForm1 = new ProjectManagement.Presentation.Trainees.TraineeForm();
+            this.traineeForm = new ProjectManagement.Presentation.Trainees.TraineeForm();
             this.traineeDataGrid1 = new ProjectManagement.Presentation.Trainees.TraineeDataGrid();
             this.bt_save = new System.Windows.Forms.Button();
             this.bt_Delete = new System.Windows.Forms.Button();
             this.bt_new = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // traineeForm1
+            // traineeForm
             // 
-            this.traineeForm1.Location = new System.Drawing.Point(3, 51);
-            this.traineeForm1.Name = "traineeForm1";
-            this.traineeForm1.Size = new System.Drawing.Size(315, 389);
-            this.traineeForm1.TabIndex = 0;
-            this.traineeForm1.Load += new System.EventHandler(this.traineeForm1_Load);
+            this.traineeForm.Location = new System.Drawing.Point(3, 51);
+            this.traineeForm.Name = "traineeForm";
+            this.traineeForm.Size = new System.Drawing.Size(371, 389);
+            this.traineeForm.TabIndex = 0;
+            this.traineeForm.TraineeValue = null;
+            this.traineeForm.Load += new System.EventHandler(this.traineeForm1_Load);
             // 
             // traineeDataGrid1
             // 
-            this.traineeDataGrid1.Location = new System.Drawing.Point(324, 51);
+            this.traineeDataGrid1.Location = new System.Drawing.Point(380, 75);
             this.traineeDataGrid1.Name = "traineeDataGrid1";
-            this.traineeDataGrid1.Size = new System.Drawing.Size(525, 326);
+            this.traineeDataGrid1.Size = new System.Drawing.Size(461, 326);
             this.traineeDataGrid1.TabIndex = 1;
             // 
             // bt_save
             // 
-            this.bt_save.Location = new System.Drawing.Point(12, 446);
+            this.bt_save.Location = new System.Drawing.Point(12, 461);
             this.bt_save.Name = "bt_save";
             this.bt_save.Size = new System.Drawing.Size(75, 23);
             this.bt_save.TabIndex = 2;
             this.bt_save.Text = "Save";
             this.bt_save.UseVisualStyleBackColor = true;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
             // bt_Delete
             // 
-            this.bt_Delete.Location = new System.Drawing.Point(219, 12);
+            this.bt_Delete.Location = new System.Drawing.Point(299, 12);
             this.bt_Delete.Name = "bt_Delete";
             this.bt_Delete.Size = new System.Drawing.Size(75, 23);
             this.bt_Delete.TabIndex = 4;
@@ -87,16 +89,17 @@
             this.Controls.Add(this.bt_Delete);
             this.Controls.Add(this.bt_save);
             this.Controls.Add(this.traineeDataGrid1);
-            this.Controls.Add(this.traineeForm1);
+            this.Controls.Add(this.traineeForm);
             this.Name = "TraineeManager";
             this.Text = "TraineeManager";
+            this.Load += new System.EventHandler(this.TraineeManager_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private TraineeForm traineeForm1;
+        private TraineeForm traineeForm;
         private TraineeDataGrid traineeDataGrid1;
         private System.Windows.Forms.Button bt_save;
         private System.Windows.Forms.Button bt_Delete;

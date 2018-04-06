@@ -15,6 +15,9 @@ namespace ProjectManagement
         public MainForm()
         {
             InitializeComponent();
+            //Change Language
+            // System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ar");
+            // System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar");
         }
 
         private void bt_trainees_Click(object sender, EventArgs e)

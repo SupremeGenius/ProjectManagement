@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAL\TraineeBAO.cs" />
+    <Compile Include="BAL\TraineeBLO.cs" />
     <Compile Include="DAL\Manager.cs" />
     <Compile Include="DAL\ProjectManagerDataObject.cs" />
     <Compile Include="DAL\TraineeDAO.cs" />
@@ -59,6 +59,36 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ResourceEntityManager.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEntityManager.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ResourceEntityManager.ar.Designer.cs">
+      <DependentUpon>ResourceEntityManager.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Presentation\ResourceEntityManager.fr.Designer.cs">
+      <DependentUpon>ResourceEntityManager.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Presentation\Trainees\ResourceTrainee.ar.Designer.cs">
+      <DependentUpon>ResourceTrainee.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Presentation\Trainees\ResourceTrainee.fr.Designer.cs">
+      <DependentUpon>ResourceTrainee.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Presentation\Trainees\ResourceTrainee.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceTrainee.resx</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Trainees\TraineeDataGrid.cs">
       <SubType>UserControl</SubType>
@@ -82,6 +112,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ResourceEntityManager.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEntityManager.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ResourceEntityManager.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEntityManager.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ResourceEntityManager.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEntityManager.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Trainees\ResourceTrainee.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceTrainee.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Trainees\ResourceTrainee.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceTrainee.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Trainees\ResourceTrainee.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceTrainee.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Trainees\TraineeDataGrid.resx">
       <DependentUpon>TraineeDataGrid.cs</DependentUpon>

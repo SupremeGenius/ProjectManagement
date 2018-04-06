@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 namespace ProjectManagement.BAL
 {
     // Solution 1
-    public class TraineeBAO : TraineeDAO
+    public class TraineeBLO : TraineeDAO
     {
+
         // Solution 2
         //private TraineeDAO _TraineeDAO;
         //public TraineeBAO()
